@@ -5,11 +5,11 @@ const translations = {
         'nav.about': 'About',
         'nav.activities': 'Activities',
         'nav.projects': 'Projects',
-        'nav.join': 'Join',
+        'nav.join': 'Get Involved',
 
         'hero.title': 'Civic Technology<br>for a Better Society',
         'hero.subtitle': 'Code for Korea is a civic tech network building a safer and more trustworthy society through civic hacking and open data.',
-        'hero.btn.join': 'Join Us',
+        'hero.btn.join': 'Get Involved',
         'hero.btn.projects': 'View Projects',
 
         'about.title': 'About Code for Korea',
@@ -139,7 +139,7 @@ const translations = {
         'plan6.text': 'Lower the barrier to entry while raising the quality of ideas produced',
         'futureplan.msg': 'As a leading civic technology community connecting technology and the public good,<br>we will pursue both deepening our operations and expanding our reach in a balanced way.',
 
-        'join.title': 'Join Code for Korea',
+        'join.title': 'Get Involved with Code for Korea',
         'join.intro': 'There are many ways to participate in Code for Korea.',
         'join1.title': 'Join Discord',
         'join1.text': 'Check in on projects and events in our online community.',
@@ -160,6 +160,7 @@ const translations = {
         'footer.links': 'Key Links',
         'footer.main': 'Main Site',
         'footer.archive': 'Project Archive',
+        'footer.coc': 'Code of Conduct',
         'footer.contact': 'Contact',
         'footer.copyright': '© 2025 CODE FOR KOREA. All rights reserved.',
     },
@@ -323,6 +324,7 @@ const translations = {
         'footer.links': '주요 링크',
         'footer.main': '메인 사이트',
         'footer.archive': '프로젝트 아카이브',
+        'footer.coc': '행동강령',
         'footer.contact': '문의',
         'footer.copyright': '© 2025 CODE FOR KOREA. All rights reserved.',
     },
@@ -456,10 +458,26 @@ window.addEventListener('load', animateCounters);
 
 // ─── Mobile menu ──────────────────────────────────────────────────────────────
 
+const hamburger = document.getElementById('hamburger');
+const navbarRight = document.querySelector('.navbar-right');
+
+hamburger?.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navbarRight.classList.toggle('open');
+});
+
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-        document.querySelector('.nav-links')?.classList.remove('active');
+        hamburger?.classList.remove('open');
+        navbarRight?.classList.remove('open');
     });
+});
+
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.navbar')) {
+        hamburger?.classList.remove('open');
+        navbarRight?.classList.remove('open');
+    }
 });
 
 // ─── Lazy load images ─────────────────────────────────────────────────────────
