@@ -1,0 +1,28 @@
+{
+  "name": "codeforkorea-webrochure",
+  "version": "1.0.0",
+  "description": "코드포코리아 공식 웹브로셔 - 기술로 사회 문제를 함께 해결하는 시민들의 커뮤니티",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000 || python -m SimpleHTTPServer 8000",
+    "dev": "npx http-server -p 8000 -o",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "echo 'Deploy to your hosting service'"
+  },
+  "keywords": [
+    "civic-hacking",
+    "open-data",
+    "community",
+    "public-good",
+    "korea"
+  ],
+  "author": "CODE FOR KOREA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeforkorea/webrochure.git"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
