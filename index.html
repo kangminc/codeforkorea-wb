@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="기술로 사회 문제를 함께 해결하는 시민들의 커뮤니티, 코드포코리아">
-    <title>코드포코리아 - 시민 기술 커뮤니티</title>
+    <meta name="description" content="Code for Korea — A civic tech network building a better society through civic hacking and open data.">
+    <title>Code for Korea — Civic Tech Community</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,14 +12,23 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="#home">CODE FOR KOREA</a>
+                <a href="#home">
+                    <img src="https://codefor.kr/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTQyNDI0LCJwdXIiOiJibG9iX2lkIn19--4acd58c4c0681770ad1870ad04197f0ef6cbb713/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOls0MDAsNDAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--eed0be66804095d6b6e5ac8676fad95f3ea9354b/19755d27-1790-460b-a901-77bb539d71c8.png" alt="CODE FOR KOREA" class="logo-img">
+                </a>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">소개</a></li>
-                <li><a href="#activities">활동</a></li>
-                <li><a href="#projects">프로젝트</a></li>
-                <li><a href="#join">참여</a></li>
-            </ul>
+            <div class="navbar-right">
+                <ul class="nav-links">
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#activities" data-i18n="nav.activities">Activities</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#join" data-i18n="nav.join">Join</a></li>
+                </ul>
+                <div class="lang-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="ko">KO</button>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -27,8 +36,8 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">기술로 사회 문제를<br>함께 해결하는 시민들의 커뮤니티</h1>
-                <p class="hero-subtitle">코드포코리아는 시빅해킹과 공익데이터 활동을 통해 안전하고 신뢰할 수 있는 사회를 만드는 시민 기술 네트워크입니다.</p>
+                <h1 class="hero-title" data-i18n-html="hero.title">Civic Technology<br>for a Better Society</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Code for Korea is a civic tech network building a safer and more trustworthy society through civic hacking and open data.</p>
                 <div class="hero-keywords">
                     <span class="keyword">Civic Hacking</span>
                     <span class="keyword">Open Data</span>
@@ -36,8 +45,8 @@
                     <span class="keyword">Public Good</span>
                 </div>
                 <div class="hero-cta">
-                    <a href="#join" class="btn btn-primary">함께하기</a>
-                    <a href="#projects" class="btn btn-secondary">프로젝트 보기</a>
+                    <a href="#join" class="btn btn-primary" data-i18n="hero.btn.join">Join Us</a>
+                    <a href="#projects" class="btn btn-secondary" data-i18n="hero.btn.projects">View Projects</a>
                 </div>
             </div>
         </div>
@@ -46,29 +55,29 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">코드포코리아 소개</h2>
+            <h2 class="section-title" data-i18n="about.title">About Code for Korea</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>코드포코리아는 대한민국에서 시빅해킹과 공익데이터 활동을 하는 시민들의 커뮤니티입니다.</p>
-                    <p>개발자, 디자이너, 기획자, 연구자, 기자, 활동가, 공무원, 학생 등 다양한 사람들이 모여 사회 문제를 발견하고, 데이터를 탐색하고, 누구나 활용할 수 있는 도구를 만들어 공개합니다.</p>
+                    <p data-i18n="about.p1">Code for Korea is a community of citizens engaged in civic hacking and public interest data activities in South Korea.</p>
+                    <p data-i18n="about.p2">Developers, designers, planners, researchers, journalists, activists, public officials, and students come together to identify social problems, explore data, and build tools that anyone can use.</p>
                 </div>
 
                 <div class="about-grid">
                     <div class="about-card">
-                        <h3>우리는 누구인가</h3>
-                        <p>대한민국에서 시빅해킹과 공익데이터 활동을 하는 시민 커뮤니티</p>
+                        <h3 data-i18n="about.card1.title">Who We Are</h3>
+                        <p data-i18n="about.card1.text">A citizen community in South Korea dedicated to civic hacking and open data for the public good</p>
                     </div>
                     <div class="about-card">
-                        <h3>왜 활동하는가</h3>
-                        <p>시민이 직접 사회 문제를 발견하고, 기술과 협업으로 해결책을 만들기 위해</p>
+                        <h3 data-i18n="about.card2.title">Why We Act</h3>
+                        <p data-i18n="about.card2.text">To empower citizens to directly identify social problems and create solutions through technology and collaboration</p>
                     </div>
                     <div class="about-card">
-                        <h3>누구와 함께하는가</h3>
-                        <p>개발자, 디자이너, 기획자, 기자, 시민사회 활동가, 공무원, 대학생 등</p>
+                        <h3 data-i18n="about.card3.title">Who We Work With</h3>
+                        <p data-i18n="about.card3.text">Developers, designers, planners, journalists, civil society activists, public officials, and students</p>
                     </div>
                     <div class="about-card">
-                        <h3>어떻게 일하는가</h3>
-                        <p>오픈소스, 자발적 참여, 프로젝트 기반 협업, 커뮤니티 거버넌스</p>
+                        <h3 data-i18n="about.card4.title">How We Work</h3>
+                        <p data-i18n="about.card4.text">Open source, voluntary participation, project-based collaboration, and community governance</p>
                     </div>
                 </div>
             </div>
@@ -78,43 +87,43 @@
     <!-- Civic Hacking Section -->
     <section class="civic-hacking">
         <div class="container">
-            <h2 class="section-title">시빅해킹이란?</h2>
+            <h2 class="section-title" data-i18n="civic.title">What is Civic Hacking?</h2>
             <div class="civic-content">
                 <div class="civic-definition">
-                    <p class="highlight-text">시빅해킹은 코딩만을 의미하지 않습니다.</p>
-                    <p>문제를 발견하고, 데이터를 읽고, 사람을 연결하고, 더 나은 해결책을 함께 만드는 시민적 실천입니다.</p>
+                    <p class="highlight-text" data-i18n="civic.highlight">Civic hacking is not just about coding.</p>
+                    <p data-i18n="civic.desc">It is a civic practice of identifying problems, reading data, connecting people, and building better solutions together.</p>
                 </div>
 
                 <div class="process-flow">
                     <div class="process-step">
                         <div class="step-number">1</div>
-                        <h4>문제 발견</h4>
-                        <p>시민이 실제로 겪는 사회 문제를 찾습니다.</p>
+                        <h4 data-i18n="civic.step1.title">Identify Problems</h4>
+                        <p data-i18n="civic.step1.text">Find the real social problems that citizens face.</p>
                     </div>
                     <div class="arrow">→</div>
                     <div class="process-step">
                         <div class="step-number">2</div>
-                        <h4>데이터 탐색</h4>
-                        <p>공공데이터와 현장 정보를 함께 살펴봅니다.</p>
+                        <h4 data-i18n="civic.step2.title">Explore Data</h4>
+                        <p data-i18n="civic.step2.text">Examine public data and on-the-ground information together.</p>
                     </div>
                     <div class="arrow">→</div>
                     <div class="process-step">
                         <div class="step-number">3</div>
-                        <h4>기술·디자인 적용</h4>
-                        <p>웹서비스, 지도, 데이터 시각화 등을 만듭니다.</p>
+                        <h4 data-i18n="civic.step3.title">Apply Technology & Design</h4>
+                        <p data-i18n="civic.step3.text">Build web services, maps, data visualizations, and more.</p>
                     </div>
                 </div>
                 <div class="process-flow">
                     <div class="process-step">
                         <div class="step-number">4</div>
-                        <h4>오픈소스 공개</h4>
-                        <p>누구나 참여하고 개선할 수 있도록 공유합니다.</p>
+                        <h4 data-i18n="civic.step4.title">Open Source Release</h4>
+                        <p data-i18n="civic.step4.text">Share openly so anyone can participate and improve.</p>
                     </div>
                     <div class="arrow">→</div>
                     <div class="process-step">
                         <div class="step-number">5</div>
-                        <h4>협업 확장</h4>
-                        <p>시민, 전문가, 기관과 함께 가능성을 넓힙니다.</p>
+                        <h4 data-i18n="civic.step5.title">Expand Collaboration</h4>
+                        <p data-i18n="civic.step5.text">Broaden possibilities together with citizens, experts, and institutions.</p>
                     </div>
                 </div>
             </div>
@@ -124,31 +133,31 @@
     <!-- Impact Numbers -->
     <section id="impact" class="impact">
         <div class="container">
-            <h2 class="section-title">2025년 활동 성과</h2>
+            <h2 class="section-title" data-i18n="impact.title">2025 Impact</h2>
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">267</div>
-                    <div class="stat-label">디스코드 멤버</div>
+                    <div class="stat-label" data-i18n="impact.discord">Discord Members</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">11</div>
-                    <div class="stat-label">오거나이저</div>
+                    <div class="stat-label" data-i18n="impact.organizers">Organizers</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">7</div>
-                    <div class="stat-label">공식 행사</div>
+                    <div class="stat-label" data-i18n="impact.events">Official Events</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">236+</div>
-                    <div class="stat-label">행사 참가자</div>
+                    <div class="stat-label" data-i18n="impact.attendees">Event Attendees</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">27</div>
-                    <div class="stat-label">FtO 한국 참가자</div>
+                    <div class="stat-label" data-i18n="impact.fto">FtO Korea Participants</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">2020</div>
-                    <div class="stat-label">시작 연도</div>
+                    <div class="stat-label" data-i18n="impact.founded">Founded</div>
                 </div>
             </div>
         </div>
@@ -157,43 +166,43 @@
     <!-- Activities Section -->
     <section id="activities" class="activities">
         <div class="container">
-            <h2 class="section-title">주요 활동</h2>
-            <p class="section-intro">코드포코리아는 밋앤핵, Facing the Ocean, 시빅테크 컨퍼런스를 통해 시민들이 만나고, 협업하고, 프로젝트를 이어갈 수 있는 장을 만듭니다.</p>
+            <h2 class="section-title" data-i18n="activities.title">Key Activities</h2>
+            <p class="section-intro" data-i18n="activities.intro">Code for Korea creates spaces for citizens to meet, collaborate, and continue projects through Meet &amp; Hack, Facing the Ocean, and the Civic Tech Conference.</p>
 
             <div class="activities-grid">
                 <div class="activity-card">
                     <div class="activity-header">
-                        <h3>밋앤핵</h3>
-                        <span class="badge">정기 행사</span>
+                        <h3 data-i18n="act1.title">Meet &amp; Hack</h3>
+                        <span class="badge" data-i18n="act1.badge">Regular Event</span>
                     </div>
-                    <p class="activity-description">시민들이 만나 사회문제를 함께 탐색하고 해결책을 만드는 행사</p>
+                    <p class="activity-description" data-i18n="act1.desc">An event where citizens meet to explore social problems and build solutions together</p>
                     <div class="activity-details">
-                        <p><strong>형식:</strong> 해커톤, 워크숍, 네트워킹, 프로젝트 공동작업</p>
-                        <p><strong>특징:</strong> 낮은 진입장벽과 협업 문화</p>
+                        <p data-i18n-html="act1.detail1"><strong>Format:</strong> Hackathon, workshop, networking, collaborative project work</p>
+                        <p data-i18n-html="act1.detail2"><strong>Feature:</strong> Low barrier to entry and a culture of collaboration</p>
                     </div>
                 </div>
 
                 <div class="activity-card">
                     <div class="activity-header">
                         <h3>Facing the Ocean</h3>
-                        <span class="badge">국제 행사</span>
+                        <span class="badge" data-i18n="act2.badge">International Event</span>
                     </div>
-                    <p class="activity-description">아시아 시빅해킹 커뮤니티와 함께하는 국제 네트워크</p>
+                    <p class="activity-description" data-i18n="act2.desc">An international network connecting civic hacking communities across Asia</p>
                     <div class="activity-details">
-                        <p><strong>참여:</strong> 한국, 대만, 일본 등</p>
-                        <p><strong>문화:</strong> 경쟁 없음, 상 없음, 모두가 함께 만들어가는 행사</p>
+                        <p data-i18n-html="act2.detail1"><strong>Participants:</strong> Korea, Taiwan, Japan, and more</p>
+                        <p data-i18n-html="act2.detail2"><strong>Culture:</strong> No competition, no prizes — an event built together by all</p>
                     </div>
                 </div>
 
                 <div class="activity-card">
                     <div class="activity-header">
-                        <h3>시빅테크 컨퍼런스</h3>
-                        <span class="badge">연례 행사</span>
+                        <h3 data-i18n="act3.title">Civic Tech Conference</h3>
+                        <span class="badge" data-i18n="act3.badge">Annual Event</span>
                     </div>
-                    <p class="activity-description">시민기술 프로젝트와 사회적 이슈를 공유하는 자리</p>
+                    <p class="activity-description" data-i18n="act3.desc">A gathering to share civic tech projects and social issues</p>
                     <div class="activity-details">
-                        <p><strong>구성:</strong> 발표, 토크, 네트워킹</p>
-                        <p><strong>목표:</strong> 성과와 고민을 나누고 새로운 협업 가능성 열기</p>
+                        <p data-i18n-html="act3.detail1"><strong>Format:</strong> Presentations, talks, networking</p>
+                        <p data-i18n-html="act3.detail2"><strong>Goal:</strong> Share outcomes and challenges, and open new possibilities for collaboration</p>
                     </div>
                 </div>
             </div>
@@ -203,66 +212,66 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">시민이 만드는 프로젝트</h2>
-            <p class="section-intro">코드포코리아는 시민이 직접 사회 문제를 발견하고, 데이터를 모으고, 누구나 활용할 수 있는 도구를 만드는 프로젝트를 이어왔습니다.</p>
+            <h2 class="section-title" data-i18n="projects.title">Projects Built by Citizens</h2>
+            <p class="section-intro" data-i18n="projects.intro">Code for Korea has a history of projects where citizens identify social problems, collect data, and build tools that anyone can use.</p>
 
             <div class="projects-grid">
                 <div class="project-card featured">
-                    <div class="project-tag">시빅테크 기록</div>
-                    <h3>시빅테크 프로젝트 아카이브</h3>
-                    <p class="project-description">한국의 시빅테크 프로젝트를 모아 기록하는 아카이브입니다.</p>
-                    <p class="project-detail">한국에서 진행된 시민기술 프로젝트들의 성과와 시행착오를 정리하여, 새로운 참여자들이 기존 경험을 참고할 수 있도록 돕습니다.</p>
-                    <a href="https://codefor.kr/pages/civic-tech-archive" target="_blank" class="btn btn-outline">아카이브 보기</a>
+                    <div class="project-tag" data-i18n="proj1.tag">Civic Tech Records</div>
+                    <h3 data-i18n="proj1.title">Civic Tech Project Archive</h3>
+                    <p class="project-description" data-i18n="proj1.desc">An archive documenting civic tech projects in Korea.</p>
+                    <p class="project-detail" data-i18n="proj1.detail">By compiling the outcomes and lessons learned from civic technology projects in Korea, we help new participants build on existing experience.</p>
+                    <a href="https://codefor.kr/pages/civic-tech-archive" target="_blank" class="btn btn-outline" data-i18n="proj1.btn">View Archive</a>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-tag">행정 감시</div>
-                    <h3>전국공보지도</h3>
-                    <p class="project-description">전국 지자체 전자공보 접근성을 살펴보는 프로젝트</p>
-                    <p class="project-detail">공보의 공개는 기본, 시민이 찾을 수 있고 활용할 수 있어야 합니다.</p>
-                    <a href="https://gongbo.codefor.kr/" target="_blank" class="btn btn-outline">지도 보기</a>
+                    <div class="project-tag" data-i18n="proj2.tag">Government Oversight</div>
+                    <h3 data-i18n="proj2.title">Public Bulletin Map</h3>
+                    <p class="project-description" data-i18n="proj2.desc">A project examining the accessibility of electronic public bulletins across Korean municipalities</p>
+                    <p class="project-detail" data-i18n="proj2.detail">Publishing bulletins is the baseline — they must be findable and usable by citizens.</p>
+                    <a href="https://gongbo.codefor.kr/" target="_blank" class="btn btn-outline" data-i18n="proj2.btn">View Map</a>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-tag">지역경제</div>
-                    <h3>지역화폐로 할게요</h3>
-                    <p class="project-description">전국 지역화폐 정책 변화를 데이터로 살펴보는 프로젝트</p>
-                    <p class="project-detail">200여 개 지자체의 정책 현황을 수집하여 시민이 판단할 수 있는 데이터를 제공합니다.</p>
-                    <a href="https://localpay.codefor.kr/" target="_blank" class="btn btn-outline">프로젝트 보기</a>
+                    <div class="project-tag" data-i18n="proj3.tag">Local Economy</div>
+                    <h3 data-i18n="proj3.title">Let's Use Local Currency</h3>
+                    <p class="project-description" data-i18n="proj3.desc">A data-driven look at changes in local currency policy nationwide</p>
+                    <p class="project-detail" data-i18n="proj3.detail">We collect policy data from over 200 municipalities to provide citizens with the information they need to evaluate their local programs.</p>
+                    <a href="https://localpay.codefor.kr/" target="_blank" class="btn btn-outline" data-i18n="proj3.btn">View Project</a>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-tag">재난안전</div>
-                    <h3>안심이</h3>
-                    <p class="project-description">재난 안전 정보를 시민의 눈높이에서 다시 읽는 프로젝트</p>
-                    <p class="project-detail">공공데이터를 시민 관점에서 개선하여 모두를 위한 재난 대비를 돕습니다.</p>
-                    <a href="https://ansimi.codefor.kr/" target="_blank" class="btn btn-outline">프로젝트 보기</a>
+                    <div class="project-tag" data-i18n="proj4.tag">Disaster Safety</div>
+                    <h3 data-i18n="proj4.title">Ansimi</h3>
+                    <p class="project-description" data-i18n="proj4.desc">A project that re-reads disaster safety information from a citizen's perspective</p>
+                    <p class="project-detail" data-i18n="proj4.detail">We improve public data from a citizen's viewpoint to help everyone prepare for disasters.</p>
+                    <a href="https://ansimi.codefor.kr/" target="_blank" class="btn btn-outline" data-i18n="proj4.btn">View Project</a>
                 </div>
             </div>
 
             <div class="timeline">
-                <h3 class="timeline-title">프로젝트 타임라인</h3>
+                <h3 class="timeline-title" data-i18n="timeline.title">Project Timeline</h3>
                 <div class="timeline-items">
                     <div class="timeline-item">
                         <div class="timeline-year">2020</div>
                         <div class="timeline-projects">
-                            <p><strong>공적마스크 앱</strong><br>코로나19 시기 약국 마스크 재고 정보 제공</p>
-                            <p><strong>개인안심번호</strong><br>개인정보 노출 방지 방안</p>
+                            <p data-i18n-html="tl.2020.p1"><strong>Public Mask App</strong><br>Provided pharmacy mask stock information during COVID-19</p>
+                            <p data-i18n-html="tl.2020.p2"><strong>Personal Safety Number</strong><br>A system to prevent personal information exposure</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-year">2022-2023</div>
+                        <div class="timeline-year">2022–2023</div>
                         <div class="timeline-projects">
-                            <p><strong>전국공보지도</strong> (2022)</p>
-                            <p><strong>지역화폐로 할게요</strong> (2023)</p>
+                            <p data-i18n-html="tl.2022.p1"><strong>Public Bulletin Map</strong> (2022)</p>
+                            <p data-i18n-html="tl.2022.p2"><strong>Let's Use Local Currency</strong> (2023)</p>
                         </div>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-year">2024-2026</div>
+                        <div class="timeline-year">2024–2026</div>
                         <div class="timeline-projects">
-                            <p><strong>시빅테크 프로젝트 아카이브</strong> (2024)</p>
-                            <p><strong>안심이</strong> (2025)</p>
-                            <p><strong>신규 프로젝트 확장</strong> (2026)</p>
+                            <p data-i18n-html="tl.2024.p1"><strong>Civic Tech Project Archive</strong> (2024)</p>
+                            <p data-i18n-html="tl.2024.p2"><strong>Ansimi</strong> (2025)</p>
+                            <p data-i18n-html="tl.2024.p3"><strong>New Projects Expanding</strong> (2026)</p>
                         </div>
                     </div>
                 </div>
@@ -273,41 +282,41 @@
     <!-- How Projects Work -->
     <section class="how-projects">
         <div class="container">
-            <h2 class="section-title">코드포코리아의 프로젝트는 이렇게 만들어집니다</h2>
-            <p class="section-intro">코드포코리아의 프로젝트는 완성된 정답에서 출발하지 않습니다.<br>시민의 질문, 공개된 데이터, 서로 다른 전문성이 만나는 과정에서 시작됩니다.</p>
+            <h2 class="section-title" data-i18n="howprojects.title">How Code for Korea Projects Are Made</h2>
+            <p class="section-intro" data-i18n-html="howprojects.intro">Code for Korea projects don't start with a finished answer.<br>They begin where citizens' questions, open data, and diverse expertise meet.</p>
 
             <div class="workflow">
                 <div class="workflow-step">
                     <div class="step-icon">🔍</div>
-                    <h4>문제를 발견합니다</h4>
-                    <p>시민이 일상에서 마주한 불편, 정보 격차, 공공문제를 질문으로 꺼냅니다.</p>
+                    <h4 data-i18n="wf1.title">We Find the Problem</h4>
+                    <p data-i18n="wf1.text">Citizens surface inconveniences, information gaps, and public issues they encounter in daily life.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
 
                 <div class="workflow-step">
                     <div class="step-icon">📊</div>
-                    <h4>데이터를 모읍니다</h4>
-                    <p>공공데이터, 정보공개청구, 현장 조사, 시민 의견을 통해 근거를 수집합니다.</p>
+                    <h4 data-i18n="wf2.title">We Gather Data</h4>
+                    <p data-i18n="wf2.text">We collect evidence through public data, FOIA requests, field research, and citizen input.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
 
                 <div class="workflow-step">
                     <div class="step-icon">💭</div>
-                    <h4>함께 해석합니다</h4>
-                    <p>개발자, 디자이너, 기획자, 연구자, 활동가가 각자의 관점으로 문제를 읽습니다.</p>
+                    <h4 data-i18n="wf3.title">We Interpret Together</h4>
+                    <p data-i18n="wf3.text">Developers, designers, planners, researchers, and activists read the problem through their own lens.</p>
                 </div>
 
                 <div class="workflow-step">
                     <div class="step-icon">🛠️</div>
-                    <h4>도구를 만듭니다</h4>
-                    <p>지도, 웹사이트, 데이터 시각화, 아카이브, 가이드 등 시민이 활용할 수 있는 결과물을 만듭니다.</p>
+                    <h4 data-i18n="wf4.title">We Build Tools</h4>
+                    <p data-i18n="wf4.text">We create maps, websites, data visualizations, archives, and guides that citizens can actually use.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
 
                 <div class="workflow-step">
                     <div class="step-icon">🌐</div>
-                    <h4>공개하고 개선합니다</h4>
-                    <p>결과물을 공유하고, 피드백을 받아 다음 활동으로 이어갑니다.</p>
+                    <h4 data-i18n="wf5.title">We Share &amp; Improve</h4>
+                    <p data-i18n="wf5.text">We publish our work, gather feedback, and carry it forward into the next activity.</p>
                 </div>
             </div>
         </div>
@@ -316,35 +325,35 @@
     <!-- How We Work -->
     <section class="how-we-work">
         <div class="container">
-            <h2 class="section-title">코드포코리아의 일하는 방식</h2>
-            <p class="section-intro">단순 행사 단체가 아니라 지속 가능한 커뮤니티입니다.</p>
+            <h2 class="section-title" data-i18n="howwework.title">How Code for Korea Works</h2>
+            <p class="section-intro" data-i18n="howwework.intro">We are a sustainable community, not just an event organizer.</p>
 
             <div class="principles-grid">
                 <div class="principle-card">
-                    <h3>시민 주도</h3>
-                    <p>문제를 겪는 시민이 직접 질문하고 참여합니다.</p>
+                    <h3 data-i18n="p1.title">Citizen-Led</h3>
+                    <p data-i18n="p1.text">Citizens who face the problems themselves ask questions and participate directly.</p>
                 </div>
                 <div class="principle-card">
-                    <h3>오픈소스</h3>
-                    <p>결과물을 공개하고 누구나 개선할 수 있게 합니다.</p>
+                    <h3 data-i18n="p2.title">Open Source</h3>
+                    <p data-i18n="p2.text">We publish our work openly so anyone can improve it.</p>
                 </div>
                 <div class="principle-card">
-                    <h3>다학제 협업</h3>
-                    <p>개발자뿐 아니라 다양한 전문가가 함께합니다.</p>
+                    <h3 data-i18n="p3.title">Multidisciplinary</h3>
+                    <p data-i18n="p3.text">Not just developers — experts from all fields work together.</p>
                 </div>
                 <div class="principle-card">
-                    <h3>지속적 참여</h3>
-                    <p>행사, 온라인, 프로젝트로 다양한 방식으로 참여할 수 있습니다.</p>
+                    <h3 data-i18n="p4.title">Continuous Participation</h3>
+                    <p data-i18n="p4.text">There are many ways to get involved: events, online, and projects.</p>
                 </div>
                 <div class="principle-card">
-                    <h3>공공성과 신뢰</h3>
-                    <p>기술이 사회에 기여할 수 있는 방향을 함께 고민합니다.</p>
+                    <h3 data-i18n="p5.title">Public Good &amp; Trust</h3>
+                    <p data-i18n="p5.text">We think together about how technology can contribute to society.</p>
                 </div>
             </div>
 
             <div class="governance">
-                <h3>거버넌스</h3>
-                <p>코드포코리아는 임의단체로, 정회원 과반의 출석으로 성립되는 총회를 최고 의사결정기구로 둡니다. 오거나이저는 격주로 회의를 열어 주요 안건을 토론하고 결정하며, 자원봉사로 참여하고 있습니다.</p>
+                <h3 data-i18n="governance.title">Governance</h3>
+                <p data-i18n="governance.text">Code for Korea is an unregistered association. The General Assembly, which convenes with a majority of full members present, serves as the highest decision-making body. Organizers hold biweekly meetings to discuss and decide on key issues, and all participate on a voluntary basis.</p>
             </div>
         </div>
     </section>
@@ -352,38 +361,38 @@
     <!-- 2026 Plan -->
     <section class="future-plan">
         <div class="container">
-            <h2 class="section-title">2026년 방향</h2>
-            <p class="section-intro">코드포코리아는 새롭게 확립한 방향성과 거버넌스를 바탕으로, 활동의 양과 질을 동시에 끌어올리고자 합니다.</p>
+            <h2 class="section-title" data-i18n="futureplan.title">2026 Direction</h2>
+            <p class="section-intro" data-i18n="futureplan.intro">Building on our newly established direction and governance, Code for Korea aims to improve both the quantity and quality of our activities.</p>
 
             <div class="plan-grid">
                 <div class="plan-card">
-                    <h3>거버넌스 개선</h3>
-                    <p>정회원 제도와 총회 운영을 통해 더 투명한 의사결정 구조 마련</p>
+                    <h3 data-i18n="plan1.title">Governance Improvements</h3>
+                    <p data-i18n="plan1.text">Establishing a more transparent decision-making structure through full membership and general assembly operations</p>
                 </div>
                 <div class="plan-card">
-                    <h3>FtO 서울 개최</h3>
-                    <p>청년 참여를 중심으로 아시아 시빅해킹 네트워크 확장</p>
+                    <h3 data-i18n="plan2.title">FtO Seoul</h3>
+                    <p data-i18n="plan2.text">Expanding the Asian civic hacking network with youth participation at its center</p>
                 </div>
                 <div class="plan-card">
-                    <h3>프로젝트 지원 강화</h3>
-                    <p>아이디어가 실제 결과물로 이어지도록 프로젝트팀 지원</p>
+                    <h3 data-i18n="plan3.title">Stronger Project Support</h3>
+                    <p data-i18n="plan3.text">Supporting project teams so ideas actually turn into results</p>
                 </div>
                 <div class="plan-card">
-                    <h3>시빅테크 아카이브 재가동</h3>
-                    <p>시민기술의 성과와 시행착오를 기록</p>
+                    <h3 data-i18n="plan4.title">Civic Tech Archive Relaunch</h3>
+                    <p data-i18n="plan4.text">Documenting the outcomes and lessons of civic technology</p>
                 </div>
                 <div class="plan-card">
-                    <h3>프로젝트 중심 컨퍼런스</h3>
-                    <p>한 해 동안 진행된 프로젝트의 결과와 배움을 공유</p>
+                    <h3 data-i18n="plan5.title">Project-Centered Conference</h3>
+                    <p data-i18n="plan5.text">Sharing the results and learnings from projects conducted throughout the year</p>
                 </div>
                 <div class="plan-card">
-                    <h3>밋앤핵 고도화</h3>
-                    <p>참여 문턱은 낮추되, 도출되는 아이디어의 수준은 높이기</p>
+                    <h3 data-i18n="plan6.title">Meet &amp; Hack Enhancement</h3>
+                    <p data-i18n="plan6.text">Lower the barrier to entry while raising the quality of ideas produced</p>
                 </div>
             </div>
 
             <div class="future-message">
-                <p>기술과 공익을 연결하는 대표적인 시민 기술 커뮤니티로서,<br>내실 있는 운영과 외연의 확장을 균형 있게 추진해 나가겠습니다.</p>
+                <p data-i18n-html="futureplan.msg">As a leading civic technology community connecting technology and the public good,<br>we will pursue both deepening our operations and expanding our reach in a balanced way.</p>
             </div>
         </div>
     </section>
@@ -391,46 +400,46 @@
     <!-- Join Us Section -->
     <section id="join" class="join-us">
         <div class="container">
-            <h2 class="section-title">코드포코리아에 함께하기</h2>
-            <p class="section-intro">코드포코리아에는 다양한 방식으로 참여할 수 있습니다.</p>
+            <h2 class="section-title" data-i18n="join.title">Join Code for Korea</h2>
+            <p class="section-intro" data-i18n="join.intro">There are many ways to participate in Code for Korea.</p>
 
             <div class="join-options">
                 <div class="join-card">
                     <div class="join-icon">💬</div>
-                    <h3>디스코드 참여</h3>
-                    <p>온라인 커뮤니티에서 프로젝트와 행사 소식을 확인하세요.</p>
+                    <h3 data-i18n="join1.title">Join Discord</h3>
+                    <p data-i18n="join1.text">Check in on projects and events in our online community.</p>
                 </div>
 
                 <div class="join-card">
                     <div class="join-icon">🤝</div>
-                    <h3>밋앤핵 참가</h3>
-                    <p>관심 있는 사회문제를 함께 논의하고 작업해 보세요.</p>
+                    <h3 data-i18n="join2.title">Attend Meet &amp; Hack</h3>
+                    <p data-i18n="join2.text">Discuss and work on social issues you care about.</p>
                 </div>
 
                 <div class="join-card">
                     <div class="join-icon">🔨</div>
-                    <h3>프로젝트 참여</h3>
-                    <p>개발, 디자인, 기획, 리서치 등으로 기여할 수 있습니다.</p>
+                    <h3 data-i18n="join3.title">Join a Project</h3>
+                    <p data-i18n="join3.text">You can contribute through development, design, planning, research, and more.</p>
                 </div>
 
                 <div class="join-card">
                     <div class="join-icon">🎤</div>
-                    <h3>행사 발표·협업 제안</h3>
-                    <p>시민기술 관련 활동을 공유하고 협업을 제안해 보세요.</p>
+                    <h3 data-i18n="join4.title">Present at Events &amp; Propose Collaboration</h3>
+                    <p data-i18n="join4.text">Share your civic tech work and propose new collaborations.</p>
                 </div>
 
                 <div class="join-card">
                     <div class="join-icon">⭐</div>
-                    <h3>정회원·오거나이저 참여</h3>
-                    <p>커뮤니티 운영과 의사결정에 더 깊이 참여할 수 있습니다.</p>
+                    <h3 data-i18n="join5.title">Become a Member or Organizer</h3>
+                    <p data-i18n="join5.text">Get more deeply involved in community operations and decision-making.</p>
                 </div>
             </div>
 
             <div class="cta-section">
-                <p class="cta-text">내가 할 수 있는 방식으로<br>시민기술에 참여해 보세요.</p>
+                <p class="cta-text" data-i18n-html="cta.text">Participate in civic technology<br>in the way that works for you.</p>
                 <div class="cta-buttons">
-                    <a href="https://discord.gg/codeforkorea" target="_blank" class="btn btn-primary">디스코드 참여</a>
-                    <a href="mailto:contact@codefor.kr" class="btn btn-secondary">문의하기</a>
+                    <a href="https://discord.gg/codeforkorea" target="_blank" class="btn btn-primary" data-i18n="cta.discord">Join Discord</a>
+                    <a href="mailto:contact@codefor.kr" class="btn btn-secondary" data-i18n="cta.contact">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -442,10 +451,10 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>CODE FOR KOREA</h4>
-                    <p>기술로 사회 문제를 함께 해결하는 시민들의 커뮤니티</p>
+                    <p data-i18n="footer.tagline">A citizen community solving social problems through technology</p>
                 </div>
                 <div class="footer-section">
-                    <h4>연결하기</h4>
+                    <h4 data-i18n="footer.connect">Connect</h4>
                     <ul>
                         <li><a href="https://discord.gg/codeforkorea" target="_blank">Discord</a></li>
                         <li><a href="https://github.com/codeforkorea" target="_blank">GitHub</a></li>
@@ -453,16 +462,16 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>주요 링크</h4>
+                    <h4 data-i18n="footer.links">Key Links</h4>
                     <ul>
-                        <li><a href="https://codefor.kr" target="_blank">메인 사이트</a></li>
-                        <li><a href="https://codefor.kr/pages/civic-tech-archive" target="_blank">프로젝트 아카이브</a></li>
-                        <li><a href="mailto:contact@codefor.kr">문의</a></li>
+                        <li><a href="https://codefor.kr" target="_blank" data-i18n="footer.main">Main Site</a></li>
+                        <li><a href="https://codefor.kr/pages/civic-tech-archive" target="_blank" data-i18n="footer.archive">Project Archive</a></li>
+                        <li><a href="mailto:contact@codefor.kr" data-i18n="footer.contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 CODE FOR KOREA. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 CODE FOR KOREA. All rights reserved.</p>
             </div>
         </div>
     </footer>
