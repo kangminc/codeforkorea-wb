@@ -8,7 +8,7 @@
     <link rel="icon" href="https://codefor.kr/_storage_/public/100/0frtlp1kw81aesr5un7beg9m1dbr">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
             <div class="navbar-right">
                 <ul class="nav-links">
                     <li><a href="#about" data-i18n="nav.about">About</a></li>
-                    <li><a href="#activities" data-i18n="nav.activities">Activities</a></li>
+                    <li><a href="#activities" data-i18n="nav.activities">Events</a></li>
                     <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
                     <li><a href="#join" data-i18n="nav.join">Get Involved</a></li>
                 </ul>
@@ -31,6 +31,7 @@
             <div class="lang-toggle">
                 <button class="lang-btn active" data-lang="en">EN</button>
                 <button class="lang-btn" data-lang="ko">KO</button>
+                <button class="lang-btn" data-lang="zh">ZH</button>
             </div>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span>
@@ -45,7 +46,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title" data-i18n-html="hero.title">Civic Technology<br>for a Better Society</h1>
-                <p class="hero-subtitle" data-i18n="hero.subtitle">Code for Korea is a civic tech network building a safer and more trustworthy society through civic hacking and open data.</p>
+                <p class="hero-subtitle" data-i18n-html="hero.subtitle">Code for Korea starts with citizens' questions, and builds a better society through data and technology.</p>
                 <div class="hero-keywords">
                     <span class="keyword">#Civic Hacking</span>
                     <span class="keyword">#Open Data</span>
@@ -67,6 +68,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p data-i18n="about.p1">A citizen community in South Korea dedicated to civic hacking and open data for the public good.</p>
+                    <p data-i18n="about.p2">Code for Korea began in 2020 with 17 citizens who gathered to demand COVID-19 public data from the government. The 200+ civic hackers who joined forces built an app showing mask stock at pharmacies. Code for Korea continues this spirit, contributing to a safer and more trustworthy society.</p>
                 </div>
 
                 <div class="about-grid">
@@ -75,16 +77,16 @@
                         <p data-i18n="about.card1.text">The General Assembly, which convenes with a majority of registered members present, serves as the highest decision-making body. Organizers hold biweekly meetings to discuss and decide on key issues, and all participate on a voluntary basis.</p>
                     </div>
                     <div class="about-card">
-                        <h3 data-i18n="about.card3.title">Who We Are</h3>
+                        <h3 data-i18n="about.card3.title">Who Joins Us</h3>
                         <p data-i18n="about.card3.text">Developers, designers, planners, researchers, journalists, activists, public officials, and students come together to make better society.</p>
                     </div>
                     <div class="about-card">
-                        <h3 data-i18n="about.card2.title">Why We Hack</h3>
-                        <p data-i18n="about.card2.text">To empower citizens to directly identify social problems and create solutions through technology and collaboration</p>
+                        <h3 data-i18n="about.card2.title">Why Civic Hacking?</h3>
+                        <p data-i18n="about.card2.text">We believe citizens can directly identify social problems and build solutions through technology and collaboration.</p>
                     </div>
                     <div class="about-card">
                         <h3 data-i18n="about.card4.title">How We Work</h3>
-                        <p data-i18n="about.card4.text">Open source, voluntary participation, project-based collaboration, and community governance</p>
+                        <p data-i18n="about.card4.text">Civic hackers participate voluntarily and collaborate on a project basis. Outputs are shared as open source. We pursue the values of transparent community governance.</p>
                     </div>
                 </div>
             </div>
@@ -137,39 +139,11 @@
         </div>
     </section>
 
-    <!-- Impact Numbers -->
-    <section id="impact" class="impact">
-        <div class="container">
-            <h2 class="section-title" data-i18n="impact.title">2025 Impact</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">267</div>
-                    <div class="stat-label" data-i18n="impact.discord">Discord Members</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">11</div>
-                    <div class="stat-label" data-i18n="impact.organizers">Organizers</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">7</div>
-                    <div class="stat-label" data-i18n="impact.events">Official Events</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">236+</div>
-                    <div class="stat-label" data-i18n="impact.attendees">Event Attendees</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">27</div>
-                    <div class="stat-label" data-i18n="impact.fto">FtO Korea Participants</div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Activities Section -->
     <section id="activities" class="activities">
         <div class="container">
-            <h2 class="section-title" data-i18n="activities.title">Key Activities</h2>
+            <h2 class="section-title" data-i18n="activities.title">Key Events</h2>
             <p class="section-intro" data-i18n="activities.intro">Code for Korea creates spaces for citizens to meet, collaborate, and continue projects through Meet &amp; Hack, Facing the Ocean, and the Civic Tech Conference.</p>
 
             <div class="activities-grid">
@@ -463,10 +437,22 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
+
                 <div class="footer-section">
                     <h4>CODE FOR KOREA</h4>
                     <p data-i18n="footer.tagline">A citizen community solving social problems through technology</p>
                 </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="footer.links">Key Links</h4>
+                    <ul>
+                        <li><a href="https://codefor.kr" target="_blank" data-i18n="footer.main">Main Site</a></li>
+                        <li><a href="https://codefor.kr/pages/civic-tech-archive" target="_blank" data-i18n="footer.archive">Project Archive</a></li>
+                        <li><a href="https://codefor.kr/pages/581" target="_blank" data-i18n="footer.coc">Code of Conduct</a></li>
+                        <li><a href="mailto:contact@codefor.kr" data-i18n="footer.contact">Contact Organizers</a></li>
+                    </ul>
+                </div>
+
                 <div class="footer-section">
                     <h4 data-i18n="footer.connect">Connect</h4>
                     <div class="social-links">
@@ -481,15 +467,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4 data-i18n="footer.links">Key Links</h4>
-                    <ul>
-                        <li><a href="https://codefor.kr" target="_blank" data-i18n="footer.main">Main Site</a></li>
-                        <li><a href="https://codefor.kr/pages/civic-tech-archive" target="_blank" data-i18n="footer.archive">Project Archive</a></li>
-                        <li><a href="https://codefor.kr/pages/581" target="_blank" data-i18n="footer.coc">Code of Conduct</a></li>
-                        <li><a href="mailto:contact@codefor.kr" data-i18n="footer.contact">Contact Organizers</a></li>
-                    </ul>
-                </div>
+
             </div>
             <div class="footer-bottom">
                 <p data-i18n="footer.copyright">&copy; 2025 CODE FOR KOREA. All rights reserved.</p>

@@ -3,25 +3,26 @@
 const translations = {
     en: {
         'nav.about': 'About',
-        'nav.activities': 'Activities',
+        'nav.activities': 'Events',
         'nav.projects': 'Projects',
         'nav.join': 'Get Involved',
 
         'hero.title': 'Civic Technology<br>for a Better Society',
-        'hero.subtitle': 'Code for Korea is a civic tech network building a safer and more trustworthy society through civic hacking and open data.',
+        'hero.subtitle': 'Code for Korea starts with citizens\' questions, and builds a better society through data and technology.',
         'hero.btn.join': 'Get Involved',
         'hero.btn.projects': 'View Projects',
 
         'about.title': 'About Code for Korea',
-        'about.p1': 'A citizen community in South Korea dedicated to civic hacking and open data for the public good.',
+        'about.p1': 'Code for Korea is a community of citizens engaged in civic hacking and open data activities in South Korea. We aspire to be a network of citizens and institutions creating technology for the public good.',
+        'about.p2': 'Code for Korea began in 2020 with 17 citizens who gathered to demand COVID-19 public data from the government. The 200+ civic hackers who joined forces built an app showing mask stock at pharmacies. Code for Korea continues this spirit, contributing to a safer and more trustworthy society.',
         'about.card1.title': 'Governance',
         'about.card1.text': 'The General Assembly, which convenes with a majority of registered members present, serves as the highest decision-making body. Organizers hold biweekly meetings to discuss and decide on key issues, and all participate on a voluntary basis.',
-        'about.card2.title': 'Why We Hack',
-        'about.card2.text': 'To empower citizens to directly identify social problems and create solutions through technology and collaboration',
-        'about.card3.title': 'Who We Are',
+        'about.card2.title': 'Why Civic Hacking?',
+        'about.card2.text': 'We believe citizens can directly identify social problems and build solutions through technology and collaboration.',
+        'about.card3.title': 'Who Joins Us',
         'about.card3.text': 'Developers, designers, planners, researchers, journalists, activists, public officials, and students come together to make better society.',
         'about.card4.title': 'How We Work',
-        'about.card4.text': 'Open source, voluntary participation, project-based collaboration, and community governance',
+        'about.card4.text': 'Civic hackers participate voluntarily and collaborate on a project basis. Outputs are shared as open source. We pursue the values of transparent community governance.',
 
         'civic.title': 'What is Civic Hacking?',
         'civic.highlight': 'Civic hacking is not just about coding.',
@@ -37,14 +38,8 @@ const translations = {
         'civic.step5.title': 'Expand Collaboration',
         'civic.step5.text': 'Broaden possibilities together with citizens, experts, and institutions.',
 
-        'impact.title': '2025 Impact',
-        'impact.discord': 'Discord Members',
-        'impact.organizers': 'Organizers',
-        'impact.events': 'Official Events',
-        'impact.attendees': 'Event Attendees',
-        'impact.fto': 'FtO Korea Participants',
 
-        'activities.title': 'Key Activities',
+        'activities.title': 'Key Events',
         'activities.intro': 'Code for Korea creates spaces for citizens to meet, collaborate, and continue projects through Meet & Hack, Facing the Ocean, and the Civic Tech Conference.',
         'act1.title': 'Meet & Hack',
         'act1.badge': 'Regular Event',
@@ -140,36 +135,179 @@ const translations = {
         'join5.text': 'Get more deeply involved in community operations and decision-making.',
 
         'footer.tagline': 'A citizen community solving social problems through technology',
-        'footer.connect': 'Connect',
         'footer.links': 'Key Links',
         'footer.main': 'Main Site',
         'footer.archive': 'Project Archive',
         'footer.coc': 'Code of Conduct',
         'footer.contact': 'Contact Organizers',
+        'footer.connect': 'Connect',
         'footer.copyright': '© 2025 CODE FOR KOREA. All rights reserved.',
+    },
+
+    zh: {
+        'nav.about': '關於我們',
+        'nav.activities': '活動',
+        'nav.projects': '計畫',
+        'nav.join': '加入我們',
+
+        'hero.title': '公民科技<br>共創更美好的社會',
+        'hero.subtitle': '從公民的提問出發，<br>用數據與技術打造更美好的社會。',
+        'hero.btn.join': '加入我們',
+        'hero.btn.projects': '查看計畫',
+
+        'about.title': 'Code for Korea',
+        'about.p1': 'Code for Korea 是韓國的公民科技社群，致力於公民黑客與公益數據活動。我們以打造促進社會公益的技術為目標，凝聚公民與機構的網絡。',
+        'about.p2': 'Code for Korea 起源於 2020 年，17 位公民聚集，要求政府公開 COVID-19 公共數據。超過 200 名公民黑客攜手合作，開發了顯示藥局公共口罩庫存的應用程式。Code for Korea 延續這段精神，持續為打造更安全、更值得信賴的社會而努力。',
+        'about.card1.title': '治理',
+        'about.card1.text': '以正式會員過半數出席為前提召開的大會，是最高決策機構。組織者每兩週召開會議，討論並決定重要事項，所有成員均為志願參與。',
+        'about.card2.title': '為何選擇公民黑客？',
+        'about.card2.text': '我們相信公民能夠親自發掘社會問題，並透過技術與協作打造解決方案。',
+        'about.card3.title': '參與者',
+        'about.card3.text': '開發者、設計師、規劃師、研究人員、記者、社運人士、公務員、學生等各界人士齊聚一堂，共同打造更美好的社會。',
+        'about.card4.title': '工作方式',
+        'about.card4.text': '公民黑客自願參與，以計畫為基礎進行協作。成果以開源方式公開。我們追求透明的社群治理。',
+
+        'civic.title': '什麼是公民黑客？',
+        'civic.highlight': '公民黑客不只是寫程式。',
+        'civic.desc': '這是一種公民實踐——發現問題、解讀數據、連結人群，共同打造更好的解決方案。',
+        'civic.step1.title': '發現問題',
+        'civic.step1.text': '找出公民在日常生活中真正面臨的社會問題。',
+        'civic.step2.title': '探索數據',
+        'civic.step2.text': '共同研究公開數據與現場資訊。',
+        'civic.step3.title': '應用技術與設計',
+        'civic.step3.text': '打造網路服務、地圖、數據視覺化等工具。',
+        'civic.step4.title': '開源公開',
+        'civic.step4.text': '以任何人都能參與和改進的方式公開分享。',
+        'civic.step5.title': '擴大協作',
+        'civic.step5.text': '與公民、專家和機構共同拓展可能性。',
+
+        'activities.title': '主要活動',
+        'activities.intro': 'Code for Korea 透過 Meet & Hack、Facing the Ocean 及公民科技大會，為公民創造相聚、協作、延續計畫的空間。',
+        'act1.title': 'Meet & Hack',
+        'act1.badge': '定期活動',
+        'act1.desc': '公民相聚，共同探索社會問題並建立解決方案的活動',
+        'act1.detail1': '<strong>形式：</strong>黑客松、工作坊、交流、協作計畫',
+        'act1.detail2': '<strong>特色：</strong>低門檻與協作文化',
+        'act2.badge': '國際活動',
+        'act2.desc': '連結亞洲各地公民黑客社群的國際網絡',
+        'act2.detail1': '<strong>參與者：</strong>韓國、台灣、日本等',
+        'act2.detail2': '<strong>文化：</strong>無競爭、無獎項——由所有人共同打造的活動',
+        'act3.title': '公民科技大會',
+        'act3.badge': '年度活動',
+        'act3.desc': '分享公民科技計畫與社會議題的場合',
+        'act3.detail1': '<strong>形式：</strong>演講、分享、交流',
+        'act3.detail2': '<strong>目標：</strong>分享成果與挑戰，開啟新的協作可能性',
+
+        'projects.title': '公民打造的計畫',
+        'projects.intro': 'Code for Korea 持續推動由公民親自發掘社會問題、蒐集數據，並打造任何人都能使用工具的計畫。',
+        'proj1.tag': '#公民科技記錄',
+        'proj1.title': '公民科技計畫典藏庫',
+        'proj1.desc': '記錄韓國公民科技計畫的典藏庫。',
+        'proj1.detail': '整理韓國公民科技計畫的成果與經驗，幫助新參與者參考既有資源。',
+        'proj1.btn': '查看典藏庫',
+        'proj2.tag': '#政府監督',
+        'proj2.title': '官方公報地圖',
+        'proj2.desc': '審視韓國各地方政府電子公報可及性的計畫',
+        'proj2.detail': '公開公報是基本要求——公民必須能夠找到並使用它。',
+        'proj2.btn': '查看地圖',
+        'proj3.tag': '#地方經濟',
+        'proj3.title': '地方貨幣計畫',
+        'proj3.desc': '以數據審視全國地方貨幣政策變化的計畫',
+        'proj3.detail': '蒐集全國 200 多個地方政府的政策數據，為公民提供評估當地計畫所需的資訊。',
+        'proj3.btn': '查看計畫',
+        'proj4.tag': '#災難安全',
+        'proj4.title': 'Ansimi：全民災難安全',
+        'proj4.desc': '從公民視角重新解讀災難安全資訊的計畫',
+        'proj4.detail': '從公民觀點改善公共數據，幫助所有人做好災難準備。',
+        'proj4.btn': '查看計畫',
+
+        'howprojects.title': 'Code for Korea 的計畫如何誕生',
+        'howprojects.intro': 'Code for Korea 的計畫不從現成答案出發。<br>它始於公民的提問、公開數據與多元專業的交匯。',
+        'wf1.title': '發現問題',
+        'wf1.text': '公民提出日常生活中遇到的不便、資訊落差與公共議題。',
+        'wf2.title': '蒐集數據',
+        'wf2.text': '透過公共數據、資訊公開申請、實地調查與公民意見蒐集證據。',
+        'wf3.title': '共同詮釋',
+        'wf3.text': '開發者、設計師、規劃師、研究人員和社運人士從各自的視角解讀問題。',
+        'wf4.title': '打造工具',
+        'wf4.text': '製作公民能夠實際使用的地圖、網站、數據視覺化、典藏庫和指南。',
+        'wf5.title': '公開並持續改進',
+        'wf5.text': '公開我們的成果，蒐集回饋，並延續至下一個活動。',
+
+        'howwework.title': 'Code for Korea 的運作方式',
+        'howwework.intro': '我們是一個永續社群，而不只是活動主辦方。',
+        'p1.title': '公民主導',
+        'p1.text': '親身面對問題的公民直接提問並參與。',
+        'p2.title': '開源',
+        'p2.text': '我們公開成果，讓任何人都能改進。',
+        'p3.title': '跨領域協作',
+        'p3.text': '不只是開發者——各領域專家共同合作。',
+        'p4.title': '持續參與',
+        'p4.text': '有多種參與方式：活動、線上和計畫。',
+        'p5.title': '公共利益與信任',
+        'p5.text': '我們共同思考技術如何為社會做出貢獻。',
+
+        'futureplan.title': '2026 年方向',
+        'futureplan.intro': '以新確立的方向與治理為基礎，Code for Korea 致力於同步提升活動的量與質。',
+        'plan1.title': '治理改善',
+        'plan1.text': '透過正式會員制度與大會運作，建立更透明的決策結構',
+        'plan2.title': 'FtO 首爾',
+        'plan2.text': '以青年參與為核心，擴大亞洲公民黑客網絡',
+        'plan3.title': '強化計畫支援',
+        'plan3.text': '支援計畫團隊，讓想法真正轉化為成果',
+        'plan4.title': '公民科技典藏庫重啟',
+        'plan4.text': '記錄公民科技的成果與學習',
+        'plan5.title': '以計畫為核心的大會',
+        'plan5.text': '分享全年計畫的成果與學習',
+        'plan6.title': 'Meet & Hack 提升',
+        'plan6.text': '降低參與門檻，同時提升產出構想的水準',
+        'futureplan.msg': '作為連結技術與公益的代表性公民科技社群，<br>我們將均衡推進內部深化運營與外部擴展。',
+
+        'join.title': '加入 Code for Korea',
+        'join1.title': '加入 Discord',
+        'join1.text': '在線上社群關注計畫與活動訊息。',
+        'join2.title': '參加 Meet & Hack',
+        'join2.text': '討論並投入您關心的社會議題。',
+        'join3.title': '加入計畫或提出您的構想',
+        'join3.text': '您可以透過開發、設計、規劃、研究等方式貢獻——或帶來您自己的構想。',
+        'join5.title': '成為正式會員',
+        'join5.text': '更深入地參與社群運營與決策。',
+
+        'footer.tagline': '用技術共同解決社會問題的公民社群',
+        'footer.links': '重要連結',
+        'footer.main': '主網站',
+        'footer.archive': '計畫典藏庫',
+        'footer.coc': '行為準則',
+        'footer.contact': '聯絡組織者',
+        'footer.connect': '聯絡方式',
+        'footer.copyright': '© 2025 CODE FOR KOREA. 版權所有。',
+
+        'btn.more': '查看更多',
+        'btn.less': '收起',
     },
 
     ko: {
         'nav.about': '소개',
-        'nav.activities': '활동',
+        'nav.activities': '행사',
         'nav.projects': '프로젝트',
         'nav.join': '참여',
 
         'hero.title': '기술로 사회 문제를<br>함께 해결하는 시민들의 커뮤니티',
-        'hero.subtitle': '코드포코리아는 시빅해킹과 공익데이터 활동을 통해 안전하고 신뢰할 수 있는 사회를 만드는 시민 기술 네트워크입니다.',
+        'hero.subtitle': '코드포코리아는 시민의 질문에서 시작해,<br>데이터와 기술로 더 나은 사회를 만듭니다.',
         'hero.btn.join': '함께하기',
         'hero.btn.projects': '프로젝트 보기',
 
-        'about.title': '코드포코리아 소개',
-        'about.p1': '대한민국에서 시빅해킹과 공익데이터 활동을 통해 공공의 이익을 위해 헌신하는 시민 커뮤니티입니다.',
+        'about.title': '코드포코리아',
+        'about.p1': '코드포코리아는 대한민국에서 시빅해킹과 공익데이터 활동을 하는 시민들의 커뮤니티입니다. 사회에 기여하는 기술을 만드는 시민과 기관의 네트워크를 지향합니다.',
+        'about.p2': '코드포코리아는 2020년 정부에 코로나19 공공데이터를 요구하기 위해 모인 17명의 시민들로부터 시작되었습니다. 이를 계기로 모인 200여 명의 시빅해커들은 힘을 합쳐 정부가 제공하는 \'공공 마스크\'의 재고를 보여주는 앱을 만들었습니다. 코드포코리아는 이 경험을 이어가며 안전하고 신뢰할 수 있는 사회를 만드는 데 기여하고자 합니다.',
         'about.card1.title': '거버넌스',
         'about.card1.text': '정회원 과반의 출석으로 성립되는 총회를 최고 의사결정기구로 둡니다. 오거나이저는 격주로 회의를 열어 주요 안건을 토론하고 결정하며, 자원봉사로 참여하고 있습니다.',
-        'about.card2.title': '왜 활동하는가',
-        'about.card2.text': '시민이 직접 사회 문제를 발견하고, 기술과 협업으로 해결책을 만들기 위해',
-        'about.card3.title': '누구와 함께하는가',
+        'about.card2.title': '왜 시빅해킹인가',
+        'about.card2.text': '시민이 직접 사회 문제를 발견하고, 기술과 협업으로 해결책을 만들고자 합니다.',
+        'about.card3.title': '함께하는 사람들',
         'about.card3.text': '개발자, 디자이너, 기획자, 연구자, 기자, 활동가, 공무원, 학생 등 다양한 사람들이 더 나은 사회를 만들기 위해 함께합니다.',
         'about.card4.title': '어떻게 일하는가',
-        'about.card4.text': '오픈소스, 자발적 참여, 프로젝트 기반 협업, 커뮤니티 거버넌스',
+        'about.card4.text': '자발적으로 참여하는 시빅해커들은 프로젝트에 기반해 협업합니다. 결과물은 오픈소스로 공개합니다. 투명한 커뮤니티 거버넌스의 가치를 추구합니다.',
 
         'civic.title': '시빅해킹이란?',
         'civic.highlight': '시빅해킹은 코딩만을 의미하지 않습니다.',
@@ -185,14 +323,8 @@ const translations = {
         'civic.step5.title': '협업 확장',
         'civic.step5.text': '시민, 전문가, 기관과 함께 가능성을 넓힙니다.',
 
-        'impact.title': '2025년 활동 성과',
-        'impact.discord': '디스코드 멤버',
-        'impact.organizers': '오거나이저',
-        'impact.events': '공식 행사',
-        'impact.attendees': '행사 참가자',
-        'impact.fto': 'FtO 한국 참가자',
 
-        'activities.title': '주요 활동',
+        'activities.title': '주요 행사',
         'activities.intro': '코드포코리아는 밋앤핵, Facing the Ocean, 시빅테크 컨퍼런스를 통해 시민들이 만나고, 협업하고, 프로젝트를 이어갈 수 있는 장을 만듭니다.',
         'act1.title': '밋앤핵',
         'act1.badge': '정기 행사',
@@ -288,12 +420,12 @@ const translations = {
         'join5.text': '커뮤니티 운영과 의사결정에 더 깊이 참여할 수 있습니다.',
 
         'footer.tagline': '기술로 사회 문제를 함께 해결하는 시민들의 커뮤니티',
-        'footer.connect': '연결하기',
         'footer.links': '주요 링크',
         'footer.main': '메인 사이트',
         'footer.archive': '프로젝트 아카이브',
         'footer.coc': '행동강령',
         'footer.contact': '오거나이저 문의',
+        'footer.connect': '연결하기',
         'footer.copyright': '© 2025 CODE FOR KOREA. All rights reserved.',
     },
 };
@@ -322,12 +454,16 @@ function applyLanguage(lang) {
 
     document.title = lang === 'ko'
         ? '코드포코리아 — 시민 기술 커뮤니티'
+        : lang === 'zh'
+        ? 'Code for Korea — 公民科技社群'
         : 'Code for Korea — Civic Tech Community';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
         metaDesc.content = lang === 'ko'
             ? '기술로 사회 문제를 함께 해결하는 시민들의 커뮤니티, 코드포코리아'
+            : lang === 'zh'
+            ? 'Code for Korea — 韓國公民科技社群，透過公民黑客與開放數據打造更美好的社會。'
             : 'Code for Korea — A civic tech network building a better society through civic hacking and open data.';
     }
 
@@ -391,38 +527,6 @@ document.querySelectorAll('.about-card, .activity-card, .project-card, .stat-car
     observer.observe(element);
 });
 
-// ─── Counter animation ────────────────────────────────────────────────────────
-
-const animateCounters = () => {
-    document.querySelectorAll('.stat-number').forEach(card => {
-        const target = parseInt(card.textContent);
-        if (isNaN(target)) return;
-
-        let current = 0;
-        const increment = target / 50;
-
-        const updateCount = () => {
-            if (current < target) {
-                current += increment;
-                card.textContent = Math.floor(current);
-                setTimeout(updateCount, 30);
-            } else {
-                card.textContent = target;
-            }
-        };
-
-        const cardObserver = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                updateCount();
-                cardObserver.unobserve(card);
-            }
-        }, { threshold: 0.5 });
-
-        cardObserver.observe(card);
-    });
-};
-
-window.addEventListener('load', animateCounters);
 
 // ─── Mobile menu ──────────────────────────────────────────────────────────────
 
